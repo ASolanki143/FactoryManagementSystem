@@ -35,9 +35,7 @@ let vendorschema = new mongoose.Schema({
         required : true
     },
     ven_orderlist : [
-        {
-            order_id : String,
-        }
+        type = String
     ],
 
 })

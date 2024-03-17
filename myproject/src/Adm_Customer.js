@@ -31,6 +31,7 @@ export default function Adm_Customer(){
                         {method : "DELETE"})
                     .then(res=>res.json())
                     .then(res=>console.log(res))
+                    window.location.reload();
                     }}>Delete</button>
                     {/* <button>Bills</button> */}
                 </div> 

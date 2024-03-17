@@ -17,8 +17,9 @@ exports.getAllVendor = async (req , res) => {
 
 exports.getVendorById = async (req,res) => {
     try{
-        const id = req.params._id;
-        const vendor = await vndSchema.findOne({id});
+        const id = req.params.id;
+        console.log(id);
+        const vendor = await vndSchema.findById({_id : id});
         if(vendor){
             res.status(200).send(vendor);
         }
@@ -33,9 +34,10 @@ exports.getVendorById = async (req,res) => {
 
 exports.deleteVendor = async (req,res) => {
     try{
-        const id = req.params._id;
-        const vendor = await vndSchema.findOne({id});
-        await vendor.delete();
+        const id = req.params.id;
+        console.log(id);
+        const vendor = await vndSchema.findByIdAndDelete(id);
+        // await vendor.delete();
         if(vendor){
             res.status(200).send("Customer Deleted");
         }
@@ -44,7 +46,7 @@ exports.deleteVendor = async (req,res) => {
         }
     }
     catch(e){
-        res.status(500).send("Server Issue");
+        res.status(500).send("----Server Issue----");
     }
 }
 
@@ -66,17 +68,19 @@ exports.addVendor = async (req,res) => {
 
 exports.editVendor = async (req,res) => {
     try {
-        const id = req.params._id;
-        const vendor = await cstSchema.findOne({id});
-        vendor.ven_name = req.body.ven_name;
-        vendor.ven_cmp_name =req.body.ven_cmp_name;
-        vendor.ven_gstno = req.body.ven_gstno;
-        vendor.ven_bankname = req.body.ven_bankname;
-        vendor.ven_bankaccno = req.body.ven_bankaccno;
-        vendor.ven_logo = req.body.ven_logo;
-        vendor.ven_email = req.body.ven_email;
-        vendor.ven_website = req.body.ven_website;
-        vendor.ven_orderlist = req.body.ven_orderlist;
+        const id = req.params.id;
+        console.log(id);
+        const vendor = await vndSchema.findByIdAndUpdate(id,req.body,{new : true});
+        console.log(vendor)
+        // vendor.ven_name = req.body.ven_name;
+        // vendor.ven_cmp_name =req.body.ven_cmp_name;
+        // vendor.ven_gstno = req.body.ven_gstno;
+        // vendor.ven_bankname = req.body.ven_bankname;
+        // vendor.ven_bankaccno = req.body.ven_bankaccno;
+        // vendor.ven_logo = req.body.ven_logo;
+        // vendor.ven_email = req.body.ven_email;
+        // vendor.ven_website = req.body.ven_website;
+        // vendor.ven_orderlist = req.body.ven_orderlist;
 
         await vendor.save();
         if(vendor){
@@ -87,6 +91,6 @@ exports.editVendor = async (req,res) => {
         }
     } 
     catch (e) {
-        res.status(500).send("Server Issue");
+        res.status(500).send("----Server Issue----");
     }
 }

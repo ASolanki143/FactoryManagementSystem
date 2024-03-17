@@ -108,14 +108,14 @@ exports.addCustomer = async (req,res) => {
         res.status(201).json(customer);
     } 
     catch(e){
-        res.status(500).send("Server Issue ----");
+        res.status(500).send("---- Server Issue ----");
     }
 }
 
 exports.editCustomer = async (req,res) => {
     try {
-        const id = req.params._id;
-        const customer = await cstSchema.findOne({id});
+        const id = req.params.id;
+        const customer = await cstSchema.findById(id);
         customer.cst_name = req.body.cst_name;
         customer.cst_cmp_name =req.body.cst_cmp_name;
         customer.cst_gstno = req.body.cst_gstno;
