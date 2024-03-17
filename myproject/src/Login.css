@@ -1,0 +1,273 @@
+ /* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+* {
+  box-sizing: border-box;
+}
+
+
+
+.logo {
+  flex: 60%;
+  margin : 18vh 0px;
+}
+
+.main {
+  height: 80vh;
+  flex: 40%;
+  margin-left: 5px;
+  margin: 10vh 20px;
+  background-color: #616161;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  margin: 70px auto;
+  width: 100%;
+}
+
+.parentHeader {
+  padding-bottom: 1.5rem;
+  background-color: white;
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% calc(100% - 1.5rem),
+      0% 100%);
+  text-align: center;
+  height: 125px;
+  z-index: 5;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  padding-bottom: 1.5rem;
+  background-color: #212121;
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% calc(100% - 1.5rem),
+      0% 100%);
+  padding: 10px;
+  text-align: center;
+  height: 120px;
+  z-index: 3;
+
+}
+
+#logintext {
+  color: white;
+  font-size: 50px;
+}
+
+.main-inputs {
+  padding: 5vh;
+  margin : 20vh 10vh;
+}
+
+.field {
+  color: white;
+  font-size: 20px;
+  margin: 8vh 30px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(209, 208, 208);
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgb(209, 208, 208);
+}
+
+.forgot {
+  flex: 70%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.loginbtn {
+  flex: 30%;
+
+}
+
+button {
+ 
+  background-color: #212121;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 30px;
+  
+}
+ */
+*{
+  padding: 0;
+  margin : 0;
+}
+.cover{
+  padding: 15vh 10vh;
+}
+.cover>.logo{
+  width : 60%;
+  float : left;
+  height : 70vh;
+  padding-top: 100px;
+}
+.cover>.main{
+  width : 35%;
+  float : right;
+  height: 70vh;
+  /* margin-left: 5px; */
+  /* margin: 10vh 20px; */
+  background-color: #616161;
+}
+.main>.parentHeader{
+  padding-bottom: 1.5rem;
+  background-color: white;
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% calc(100% - 1.5rem),
+      0% 100%);
+  text-align: center;
+  height: calc(17vh + 5px);
+  z-index: 5;
+}
+.main>.parentHeader>.header{
+  width: 100%;
+  position: relative;
+  padding-bottom: 1.5rem;
+  background-color: #212121;
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% calc(100% - 1.5rem),
+      0% 100%);
+  padding: 10px;
+  text-align: center;
+  height: 17vh;
+  z-index: 3;
+}
+
+
+#logintext {
+  display: block;
+  margin: 15px;
+  color: white;
+  font-size: 50px;
+}
+
+.field {
+  color: white;
+  font-size: 20px;
+  margin: 30px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(209, 208, 208);
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgb(209, 208, 208);
+}
+
+
+.forgot {
+  flex: 70%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.loginbtn {
+  flex: 30%;
+}
+
+button {
+  background-color: #212121;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 30px;
+}
+
+a{
+  text-decoration: none;
+  color : white;
+}
