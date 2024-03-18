@@ -37,6 +37,7 @@ nav{
     margin : 0px;
     background-color:#343434;
     padding: 0px 30px;
+    margin-bottom: 15px;
 }
 nav>ul{
     list-style-type: none;

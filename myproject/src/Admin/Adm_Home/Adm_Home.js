@@ -1,4 +1,4 @@
-import './AdminHome.css';
+import './Adm_Home.css';
 
 export default function AdminHome() {
     return (

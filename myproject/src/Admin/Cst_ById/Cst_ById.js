@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Adm_CustomerDetail.css"
+import "./Cst_ById.css"
 
 export default function Adm_CustomerDetail(){
     const [customer , setcustomer] = useState({});

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.company>.itemCst{
+    float: left;
+    width : 50vh;
+}
+.bank>.itemCst{
+    float: left;
+    width: 50vh;
+}
+
+.mainFormCst{
+    /* width : 70%; */
+    padding : 50px;
+    background-color: rgb(225, 222, 222);
+}
+
+.headingCst{
+    background-color: rgb(49, 48, 48);
+
+}

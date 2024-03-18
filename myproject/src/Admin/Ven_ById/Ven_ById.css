@@ -1,0 +1,13 @@
+.maincst{
+    padding: 20px;
+    margin:10px;
+    background-color: rgb(187, 186, 186);
+}
+
+.maincst>span{
+    display: block;
+    color : black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
