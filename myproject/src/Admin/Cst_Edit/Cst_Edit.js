@@ -1,11 +1,13 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 
 const EditCustomerForm = () => {
   const [formData, setFormData] = useState({});
 
-  const id = localStorage.getItem("editcst_id");
+  const params = useParams();
+ 
+  const id = params.id
   console.log("----------ID",id)
   useEffect(() => {
     fetch("http://localhost:3001/customer/"+id)

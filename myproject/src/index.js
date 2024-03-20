@@ -30,6 +30,9 @@ import Ven_ById from './Admin/Ven_ById/Ven_ById.js'
 import Ven_Add from './Admin/Ven_Add/Ven_Add.js'
 import Ven_Edit from './Admin/Ven_Edit/Ven_Edit.js'
 import Cst_Edit from './Admin/Cst_Edit/Cst_Edit.js'
+import ProductAllList from './Admin/Product_AllList/Product_AllList.js';
+import AddProduct from './Admin/Product_Add/Product_Add.js';
+
 // import EditCustomer from '/Adm_editcustomer';
 // import AdminRoute from './AdminRoute';
 const router = createBrowserRouter([
@@ -79,7 +82,19 @@ const router = createBrowserRouter([
             },
             {
                 path : "/admin/editcustomer/:id",
-                element : <Cst_Edit/>
+                element : <Cst_Add/>
+            },
+            {
+                path : "/admin/productlist",
+                element : <ProductAllList/>
+            },
+            {
+                path : "/admin/addproduct",
+                element : <AddProduct/>
+            },
+            {
+                path : "/admin/editproduct/:id",
+                element : <AddProduct/>
             }
         ]
     }

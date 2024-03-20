@@ -5,7 +5,7 @@ exports.getAllCustomer = async (req , res) => {
         const customers = await cstSchema.find();
         if(customers){
             res.status(200).send(customers);
-            console.log(customers)
+            // console.log(customers)
         }
         else{
             res.status(400).send("Candidate Issue");
@@ -20,9 +20,9 @@ exports.getCustomerById = async (req,res) => {
     try{
         // console.log(req);
         const id = req.params.id;
-        console.log(id);
+        // console.log(id);
         const customer = await cstSchema.findById({_id : id});
-        console.log(customer);
+        // console.log(customer);
         if(customer){
             res.status(200).send(customer);
         }
@@ -52,9 +52,9 @@ exports.deleteCustomer = async (req,res) => {
     // }
     try{
         const id = req.params.id;
-        console.log(id)
+        // console.log(id)
         const customer = await cstSchema.findById(id);
-        console.log(customer)
+        // console.log(customer)
         if(!customer) {
             return res.status(404).send("Customer not found");
         }

@@ -28,8 +28,7 @@ function AdminMain() {
                     <li><Link to="/admin/orderrequest">Order Request</Link></li>
                     <li><Link to="/admin/orderlist">Order List</Link></li>
                     <li><Link to="admin/placeorder">Place Order</Link></li>
-                    <li><Link to="/admin/addcustomer">Add Customer</Link></li>
-                    <li><Link to="/admin/addvendor">Add Vendor</Link></li>
+                    <li><Link to="/admin/productlist">Product List</Link></li>
 
                 </ul>
             </nav>

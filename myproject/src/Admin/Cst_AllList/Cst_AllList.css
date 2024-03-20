@@ -62,10 +62,12 @@
 } */
 
 .mainCstCard{
-    background-color: rgb(190, 189, 189);
+    background-color: rgb(228, 224, 224);
     /* background-color: rgb(225, 222, 222); */
 }
 
-.titleCstAll{
-    /* background-color: rgb(49, 48, 48); */
-}
+/* .titleCstAll{
+     background-color: rgb(49, 48, 48);
+    outline: rgb(49, 48, 48) solid 4px;
+    border: white solid 2px; 
+} */

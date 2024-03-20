@@ -53,7 +53,7 @@ export default function Adm_Customer() {
             // </div>
 
             <div className="col-6 pb-4 ">
-                <div class="card mainCstCard " >
+                <div class="card mainCstCard border border-dark border-1 rounded-3" >
                     <div class="card-body">
                         <h5 class="card-title fs-5 fw-bold pb-2">Customer Name : {cus.cst_name}</h5>
                         <h6 class="card-subtitle fw-bold fs-6 mb-2 text-dark">Company Name : {cus.cst_cmp_name}</h6>
@@ -177,9 +177,14 @@ export default function Adm_Customer() {
         //     </div>
         //</>
         <>
-        <div className="row titleCstAll p-3 mb-3 border-bottom border-dark border-5">
-        <div className='col text-center fw-bold '>
-                    <span className='fs-2 text-center text-dark'>Customer List</span>
+        <div className="row titleCstAll p-3 mb-4 border-bottom border-dark border-3">
+        <div className='col fw-bold '>
+                    <span className='fs-1 text-center text-dark'>Customer List</span>
+                </div>
+                <div className="col-2 ">
+                    <button className="btn btn-dark" onClick={()=>{
+                        navigate('/admin/addcustomer')
+                    }}>Add</button>
                 </div>
         </div>
         <div className="row">

@@ -6,6 +6,7 @@ const customerroute = require("./route/customer");
 const vendorroute = require("./route/vendor");
 const bodyParser = require("body-parser");
 const customerController = require("./controller/customer")
+const productroute = require("./route/product")
 const app = express();
 const PORT = 3001;
 
@@ -16,10 +17,10 @@ mongoose.connect("mongodb+srv://ayushsolanki1403:ayushfactory143@factory.ohiwcqc
     
     app.use(bodyParser.urlencoded({extended:false}));
     // app.post("customer/addcustomer",customerController.addCustomer)
-    app.use("/",adminroute);
+    app.use("/admin",adminroute);
     app.use("/customer",customerroute);
     app.use("/vendor",vendorroute);
-
+    app.use("/product",productroute)
     app.listen(PORT , () => {
         console.log("Server Started");
     })
