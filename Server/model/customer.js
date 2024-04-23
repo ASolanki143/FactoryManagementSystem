@@ -5,6 +5,10 @@ let customerschema = new mongoose.Schema({
         type : String,
         required : true
     },
+    cst_password : {
+        type : String,
+        require : true
+    },
     cst_cmp_name : {
         type : String,
         required : true

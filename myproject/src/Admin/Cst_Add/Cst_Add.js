@@ -1,12 +1,3 @@
-// export default function Adm_addcustomer(){
-
-//     return(
-//         <>
-
-//         </>
-//     )
-// }
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'; // Import axios for making HTTP requests
 import { useNavigate, useParams } from 'react-router-dom';

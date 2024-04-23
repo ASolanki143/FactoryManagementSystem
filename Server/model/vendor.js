@@ -6,6 +6,10 @@ let vendorschema = new mongoose.Schema({
         type : String,
         required : true
     },
+    ven_password : {
+        type : String,
+        require : true
+    },
     ven_cmp_name : {
         type : String,
         required : true

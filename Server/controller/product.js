@@ -53,7 +53,7 @@ exports.addProduct = async (req,res) => {
     try {
         const product = new productschema(req.body);
         console.log(product)
-        product.save();
+        await product.save();
         if(product){
             res.status(200).send("Customer Added");
         }

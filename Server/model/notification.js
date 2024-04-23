@@ -9,9 +9,9 @@ let noti_schema = new mongoose.Schema({
         type : String,
         required : true
     },
-    user_type : {
+    order_id : {
         type : String,
-        required : true
+        required : false
     }
 })
 

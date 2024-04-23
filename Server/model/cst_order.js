@@ -4,15 +4,17 @@ let cst_order_schema = new mongoose.Schema({
 
     orderDetails : [
         {
-            material : String,
-            thickness : Number,
-            size : String,
-            quantity : Number,
+            product_id : {
+                type : String,
+            },
+            quantity : {
+                type : Number
+            }
         }
     ],
     order_date : {
         type : Date,
-        required : true
+        // required : true
     },
     cst_id :{
         type : String,
@@ -22,12 +24,19 @@ let cst_order_schema = new mongoose.Schema({
         type : Boolean,
         default : false
     },
-    approwe_date : {
+    approve_date : {
+        type : Date
+    },
+    is_reject : {
+        type : Boolean,
+        default : false
+    },
+    reject_date : {
         type : Date
     },
     state : {
         type : String,
-        required : true
+        // required : true
     },
     is_Complete : {
         type : Boolean,
